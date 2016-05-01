@@ -1,14 +1,11 @@
 import React = require('react');
-import $ = require("jquery");
-import Props = __React.Props;
+import ShopActions from "../actions/shop.action";
 
-import ShopConstants from "../constants/shop.constants";
+import Props = __React.Props;
 import EventHandler = __React.EventHandler;
 import FormEvent = __React.FormEvent;
 
 export class DevForm extends React.Component<Props<any>, {}> {
-    private apiUrl:String = '//localhost:8080/api/ghuser/';
-
     constructor(props) {
         super(props);
         this.state = {value: ''};
@@ -32,10 +29,7 @@ export class DevForm extends React.Component<Props<any>, {}> {
     }
 
     _onAdd(event:React.MouseEvent) {
-        $.ajax(this.apiUrl + this.state['value'], {
-            success: function (res) {
-                console.log(res);
-            }
-        });
+        ShopActions.add(this.state['value']);
+        this.setState({value: ''});
     }
 }

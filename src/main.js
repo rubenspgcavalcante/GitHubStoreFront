@@ -3,6 +3,7 @@ require.config({
 
     paths: {
         is: 'vendor/is_js/is',
+        EventEmitter: 'vendor/eventEmitter/EventEmitter',
         jquery: 'vendor/jquery/dist/jquery',
         underscore: 'vendor/underscore/underscore',
         bootstrap: 'vendor/bootstrap/dist/js/bootstrap',

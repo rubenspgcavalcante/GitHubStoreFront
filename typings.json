@@ -3,9 +3,11 @@
   "version": false,
   "ambientDependencies": {
     "flux": "registry:dt/flux#0.0.0+20160317120654",
+    "is_js": "registry:dt/is_js#0.0.0+20160316155526",
     "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#7fffbd3e040a93c244777e3be04cd6223ac69301",
     "react": "github:DefinitelyTyped/DefinitelyTyped/react/react.d.ts#7fffbd3e040a93c244777e3be04cd6223ac69301",
     "require": "github:DefinitelyTyped/DefinitelyTyped/requirejs/require.d.ts#7fffbd3e040a93c244777e3be04cd6223ac69301",
-    "underscore": "github:DefinitelyTyped/DefinitelyTyped/underscore/underscore.d.ts#7fffbd3e040a93c244777e3be04cd6223ac69301"
+    "underscore": "github:DefinitelyTyped/DefinitelyTyped/underscore/underscore.d.ts#7fffbd3e040a93c244777e3be04cd6223ac69301",
+    "wolfy87-eventemitter": "registry:dt/wolfy87-eventemitter#4.2.9+20160317120654"
   }
 }

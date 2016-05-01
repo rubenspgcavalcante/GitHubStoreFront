@@ -1,13 +1,10 @@
-declare module "is" {
-    interface isInterface {
-        not:isInterface,
+declare module "EventEmitter" {
+    export = Wolfy87EventEmitter.EventEmitter;
+}
 
-        undefined(val:any):boolean,
-        'null'(val:any):boolean,
-        string(val:any):boolean,
-        number(val:any):boolean,
-        object(val:any):boolean
+declare module Flux {
+    interface IAction<T> {
+        actionType:T,
+        [payload:string]:any
     }
-    var _is:isInterface;
-    export = _is;
 }
