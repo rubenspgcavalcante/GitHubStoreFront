@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/commons/dispatcher/app-dispatcher.ts"],"names":[],"mappings":";;IACA,IAAI,UAAU,GAAG,IAAI,CAAC,UAAU,CAAC;IAEjC;yBAAe,IAAI,UAAU,EAAE,CAAC","file":"app/commons/dispatcher/app-dispatcher.js","sourcesContent":["import flux = require('flux');\nvar Dispatcher = flux.Dispatcher;\n\nexport default new Dispatcher();"],"sourceRoot":"/source/"}
