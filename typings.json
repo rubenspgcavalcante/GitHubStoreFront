@@ -1,0 +1,10 @@
+{
+  "name": "githubstorefront",
+  "version": false,
+  "ambientDependencies": {
+    "require": "github:DefinitelyTyped/DefinitelyTyped/requirejs/require.d.ts#7fffbd3e040a93c244777e3be04cd6223ac69301",
+    "underscore": "github:DefinitelyTyped/DefinitelyTyped/underscore/underscore.d.ts#7fffbd3e040a93c244777e3be04cd6223ac69301",
+    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts#7fffbd3e040a93c244777e3be04cd6223ac69301",
+    "react": "github:DefinitelyTyped/DefinitelyTyped/react/react.d.ts#7fffbd3e040a93c244777e3be04cd6223ac69301"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "githubstorefront",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rubenspgcavalcante/GitHubStoreFront",
+  "authors": [
+    "Rubens Pinheiro <rubenspgcavalcante@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "GPL-3.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.22",
+    "material-design-lite": "~1.0.6",
+    "react": "~0.14.6",
+    "flux": "~2.1.1",
+    "backbone": "~1.2.3",
+    "jsx-requirejs-plugin": "~0.6.2",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "bootstrap": "^3.3.6",
+    "is_js": "^0.7.6"
+  }
+}

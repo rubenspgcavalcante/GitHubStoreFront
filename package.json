@@ -1,0 +1,37 @@
+{
+  "name": "githubstorefront",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenspgcavalcante/GitHubStoreFront.git"
+  },
+  "author": "Rubens Pinheiro",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rubenspgcavalcante/GitHubStoreFront/issues"
+  },
+  "homepage": "https://github.com/rubenspgcavalcante/GitHubStoreFront#readme",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.3.13",
+    "bower": "^1.7.2",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.10.0",
+    "gulp-webserver": "^0.9.1",
+    "gulp-rename": "^1.2.2"
+  },
+  "dependencies": {
+    "typings": "^0.8.1"
+  }
+}
