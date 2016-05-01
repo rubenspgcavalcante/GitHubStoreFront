@@ -4,10 +4,10 @@ import * as _is from "is";
 import Props = __React.Props;
 import IGHUser = shop.IGHUser;
 
-class GHUserEntry extends React.Component<Props<IGHUser>, {}> {
+class GHUserEntry extends React.Component<{ghUser:IGHUser}, {}> {
     render() {
         return (
-            <li id={this.props['id']}>{this.props['name']}</li>
+            <li id={String(this.props.ghUser.id)}>{this.props.ghUser.name}</li>
         );
     }
 }
@@ -28,7 +28,7 @@ export class Cart extends React.Component<Props<any>, {}> {
                 <span className="h3">Cart</span>
                 <ul>
                     {this.props['ghUsers'].map(function(ghUser:IGHUser){
-                        return <GHUserEntry></GHUserEntry> })}
+                        return <GHUserEntry ghUser={ghUser}></GHUserEntry> })}
                 </ul>
             </div>
         );
