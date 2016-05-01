@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: '/',
+    baseUrl: '/GitHubStoreFront/',
 
     paths: {
         is: './vendor/is_js/is',
