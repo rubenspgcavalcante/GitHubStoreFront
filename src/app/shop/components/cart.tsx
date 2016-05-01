@@ -1,4 +1,5 @@
 import React = require('react');
+import shopAction from "../actions/shop.action";
 
 import Props = __React.Props;
 import IGHUser = shop.IGHUser;
@@ -11,7 +12,7 @@ class GHUserEntry extends React.Component<{ghUser:IGHUser}, {}> {
                 <div className="col-sm-2">
                     <img src={user.avatarUrl} style={{width:64, height:64}}></img>
                     <span>Price: <b>${user.price}</b></span>
-                    <button className="btn btn-xs btn-default">Remove</button>
+                    <button onClick={this.onRemove.bind(this)} className="btn btn-xs btn-default">Remove</button>
                 </div>
                 <div className="col-sm-10">
                     <ul className="list-group">
@@ -22,6 +23,10 @@ class GHUserEntry extends React.Component<{ghUser:IGHUser}, {}> {
                 </div>
             </div>
         );
+    }
+
+    private onRemove() {
+        shopAction.remove(this.props.ghUser);
     }
 }
 

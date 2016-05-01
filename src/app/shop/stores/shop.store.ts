@@ -11,7 +11,7 @@ class ShopStore extends EventEmitter {
     private CHANGE_EVENT = 'change';
 
     private ghUsers:Object = {};
-    private apiUrl:String = '//localhost:8080/api/ghuser/';
+    private apiUrl:String = '//githubshop.herokuapp.com/api/ghuser/';
 
     constructor() {
         super();
@@ -27,6 +27,11 @@ class ShopStore extends EventEmitter {
         });
     }
 
+    remove(ghUser:IGHUser) {
+        delete this.ghUsers[ghUser.id.toString()];
+        this.emitChange();
+    }
+
     getGHUsers():IGHUser[] {
         var users = [];
         for (var i in this.ghUsers) {
@@ -36,10 +41,6 @@ class ShopStore extends EventEmitter {
         }
         return users;
     };
-
-    remove(ghUser:IGHUser) {
-        delete this.ghUsers[ghUser.id.toString()];
-    }
 
     emitChange() {
         this.emit(this.CHANGE_EVENT);
@@ -62,10 +63,10 @@ AppDispatcher.register(function (action:IAction<ShopConstants>) {
     switch (action.actionType) {
         case ShopConstants.USER_ADD:
             shopStore.add(action['username']);
-            shopStore.emitChange();
             break;
 
         case ShopConstants.USER_REMOVE:
+            shopStore.remove(action['ghUser']);
             break;
     }
 
